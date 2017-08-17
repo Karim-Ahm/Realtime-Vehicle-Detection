@@ -44,15 +44,15 @@ Results:
 + We've obtained an IOU value of 61% at iteration 5,000. The recall rate peak was at 71%. On a GTX960 the network ran at 40FPS and on the Jetson TK1 it ran at 8FPS after various optimizations we've done to both the code and the board itself.
 to put things into perspective, the GTX960 has 1024 CUDA cores while the Jetson TK1 has 192 CUDA cores only.
 
-![IOU](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/IOU.JPG "Peak IOU at Iteration 5,000")
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/IOU.JPG "Peak IOU at Iteration 5,000")
 
-![Recall](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/Recall.JPG "71% Recall at Iteration 5,000")
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/Recall.JPG "71% Recall at Iteration 5,000")
 
-![Loss Function](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/loss.JPG "Loss function during training")
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/loss.JPG "Loss function during training")
 
-![Results from Europe](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Europe Results")
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Europe Results")
 
-![Results from Egypt, Cairo](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Cairo Results")
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Cairo Results")
 
 
 Reproducing Results:
