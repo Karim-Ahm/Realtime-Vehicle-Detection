@@ -1,5 +1,10 @@
 # Realtime vehicle detection driver assistance system
 Realtime vehicle detection for driver assistance using two approaches:
+
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Europe Results")
+
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results2.JPG "Cairo Results")
+
 1. Traditional feature engineering approach: using Histogram of Oriented Gradients + Support vector machines. This approach proved to be very slow at the image level so we discontinued it
 in favor of the deep learning based approach.
 
@@ -49,10 +54,6 @@ to put things into perspective, the GTX960 has 1024 CUDA cores while the Jetson 
 ![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/Recall.JPG "71% Recall at Iteration 5,000")
 
 ![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/loss.JPG "Loss function during training")
-
-![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Europe Results")
-
-![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results2.JPG "Cairo Results")
 
 
 Reproducing Results:
