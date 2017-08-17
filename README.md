@@ -46,6 +46,7 @@ Reproducing Results:
 + We were training for only 1 class, Car. We've trained for 10,000 iterations and found out that the best IOU result was obtained at iteration 5,000. You can download our weights file [here](link).
 + The config file of our network is readily present in the cfg folder, as well as the data and names files. However, you'll need to modify the training, validation and names paths in your data file to match those on your environment.
 + Once you're done training (or if you're using our weights file) you can simply invoke one of the following two commands to validate or test YOLO:
+
 '''
 ./darknet detector valid data/rtcd.data cfg/rtcd.cfg path-to-weights
 ./darknet detector test data/rtcd.data cfg/rtcd.cfg path-to-weights path-to-image
