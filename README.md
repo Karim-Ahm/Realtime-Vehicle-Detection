@@ -47,10 +47,10 @@ Reproducing Results:
 + The config file of our network is readily present in the cfg folder, as well as the data and names files. However, you'll need to modify the training, validation and names paths in your data file to match those on your environment.
 + Once you're done training (or if you're using our weights file) you can simply invoke one of the following two commands to validate or test YOLO:
 
-'''
+```
 ./darknet detector valid data/rtcd.data cfg/rtcd.cfg path-to-weights
 ./darknet detector test data/rtcd.data cfg/rtcd.cfg path-to-weights path-to-image
 ./darknet detector demo data/rtcd.data cfg/rtcd.cfg path-to-weights path-to-video
-'''
+```
 
 
