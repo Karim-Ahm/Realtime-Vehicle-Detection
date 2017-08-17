@@ -52,7 +52,7 @@ to put things into perspective, the GTX960 has 1024 CUDA cores while the Jetson 
 
 ![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Europe Results")
 
-![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Cairo Results")
+![](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results2.JPG "Cairo Results")
 
 
 Reproducing Results:
