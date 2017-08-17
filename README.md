@@ -40,6 +40,11 @@ Training steps:
 2. Download and extract the udacity dataset into a folder, then divide the dataset according to your liking (we used 10,000 for training, 3,000 for validation, & another unlabeled dataset for testing).
 3. Run the necessary scripts to generate the files and annotations needed for training.
 4. Run the anchors script to generate the anchors needed for your CFG file.
+```
+run both scripts in root darknet folder 
+generate anchors: gen_anchors.py -filelist path-to-training-file-list -output_dir generated_anchors -num_clusters 5
+visualize anchors: python visualize_anchors.py -anchor_dir generated_anchors/
+```
 ![Anchors visualization](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/anchors5.png "Anchors")
 5. Create your CFG and data files as mentioned in the repository referenced [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
 6. Start training!
