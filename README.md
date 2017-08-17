@@ -40,10 +40,20 @@ Training steps:
 
 Results:
 ---
++ We've obtained an IOU value of 61% at iteration 5,000. The recall rate peak was at 71%. On a GTX960 the network ran at 40FPS and on the Jetson TK1 it ran at 8FPS after various optimizations we've done to both the code and the board itself.
+to put things into perspective, the GTX960 has 1024 CUDA cores while the Jetson TK1 has 192 CUDA cores only.
+
+![IOU](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Peak IOU at Iteration 5,000")
+
+![Recall](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "71% Recall at Iteration 5,000")
+
+![Loss Function](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Loss function during training")
+
+
 
 Reproducing Results:
 ---
-+ We were training for only 1 class, Car. We've trained for 10,000 iterations and found out that the best IOU result was obtained at iteration 5,000. You can download our weights file [here](link).
++ We were training for only 1 class, Car. We've trained for 8,000 iterations and found out that the best IOU result was obtained at iteration 5,000. You can download our weights file [here](link).
 + The config file of our network is readily present in the cfg folder, as well as the data and names files. However, you'll need to modify the training, validation and names paths in your data file to match those on your environment.
 + Once you're done training (or if you're using our weights file) you can simply invoke one of the following three commands to validate or test YOLO:
 
