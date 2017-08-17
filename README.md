@@ -35,6 +35,7 @@ Training steps:
 2. Download and extract the udacity dataset into a folder, then divide the dataset according to your liking (we used 10,000 for training, 3,000 for validation, & another unlabeled dataset for testing).
 3. Run the necessary scripts to generate the files and annotations needed for training.
 4. Run the anchors script to generate the anchors needed for your CFG file.
+![Anchors visualization](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/anchors5.png "Anchors")
 5. Create your CFG and data files as mentioned in the repository referenced [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
 6. Start training!
 
@@ -43,12 +44,15 @@ Results:
 + We've obtained an IOU value of 61% at iteration 5,000. The recall rate peak was at 71%. On a GTX960 the network ran at 40FPS and on the Jetson TK1 it ran at 8FPS after various optimizations we've done to both the code and the board itself.
 to put things into perspective, the GTX960 has 1024 CUDA cores while the Jetson TK1 has 192 CUDA cores only.
 
-![IOU](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Peak IOU at Iteration 5,000")
+![IOU](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/IOU.JPG "Peak IOU at Iteration 5,000")
 
-![Recall](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "71% Recall at Iteration 5,000")
+![Recall](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/Recall.JPG "71% Recall at Iteration 5,000")
 
-![Loss Function](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Loss function during training")
+![Loss Function](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/loss.JPG "Loss function during training")
 
+![Results from Europe](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Europe Results")
+
+![Results from Egypt, Cairo](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/results1.JPG "Cairo Results")
 
 
 Reproducing Results:
