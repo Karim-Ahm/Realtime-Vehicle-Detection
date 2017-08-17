@@ -19,7 +19,7 @@ The system was developed using the following:
 
 Project Goals:
 ---
-+Our aim was to create a realtime vehicle detection systems that would detect the surrounding vehicles from the drivers using an incoming video stream only.
++ Our aim was to create a realtime vehicle detection systems that would detect the surrounding vehicles from the drivers using an incoming video stream only.
 
 Project Information:
 ---
