@@ -31,8 +31,8 @@ our own scripts to convert the annotations to suit darknet. They're in the scrip
 
 Training steps:
 ---
-1. Clone the repository, install the dependencies and build using 'make' after navigating to the repository root folder.
-2. Download and extract the udacity dataset into a folder, then divide the dataset according to your liking(we used 10,000 for training, 3,000 for validation, & another unlabeled dataset for testing).
+1. Clone the repository, install the dependencies and build using `make` after navigating to the repository root folder.
+2. Download and extract the udacity dataset into a folder, then divide the dataset according to your liking (we used 10,000 for training, 3,000 for validation, & another unlabeled dataset for testing).
 3. Run the necessary scripts to generate the files and annotations needed for training.
 4. Run the anchors script to generate the anchors needed for your CFG file.
 5. Create your CFG and data files as mentioned in the repository referenced [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
