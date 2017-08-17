@@ -23,10 +23,10 @@ Project Goals:
 
 Project Information:
 ---
-+We used a CNN based approach using YOLO. An extremely fast object detection and classification network. The framework we've used (darknet) is readily implemented in C and CUDA so it provided 
++ We used a CNN based approach using YOLO. An extremely fast object detection and classification network. The framework we've used (darknet) is readily implemented in C and CUDA so it provided 
 the maximum possible support for embedded systems with a GPU (Hence, the Jetson TK1 choice).
-+Installing darknet is easy and simple. Training it wasn't. However, the internet is **thankfully** full of resources for that. We recommend [this repository](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
-+The network was trained using our custom CFG file and darknet pretrained vanilla weights. We used the Udacity dataset publicly available [here](https://github.com/udacity/self-driving-car/tree/master/annotations#dataset-2). We've written
++ Installing darknet is easy and simple. Training it wasn't. However, the internet is **thankfully** full of resources for that. We recommend [this repository](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
++ The network was trained using our custom CFG file and darknet pretrained vanilla weights. We used the Udacity dataset publicly available [here](https://github.com/udacity/self-driving-car/tree/master/annotations#dataset-2). We've written
 our own scripts to convert the annotations to suit darknet. They're in the scripts folder along with other several useful scripts.
 
 Project steps:
