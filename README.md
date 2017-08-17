@@ -4,7 +4,7 @@ Realtime vehicle detection for driver assistance using two approaches:
 in favor of the deep learning based approach.
 
 2. Deep learning based approach: Using state of the art convolutional neural networks architecture YOLO (You Only Look Once). The system was implemented using the reference framework [darknet](https://www.pjreddie.com/darknet/yolo/)
-by the original authors of the [paper](https://arxiv.org/abs/1506.02640) . 
+mimicing the **Tiny YOLOv2** by the original authors of the [paper](https://arxiv.org/abs/1506.02640) . 
 
 Environment:
 ---
@@ -29,10 +29,27 @@ the maximum possible support for embedded systems with a GPU (Hence, the Jetson 
 + The network was trained using our custom CFG file and darknet pretrained vanilla weights. We used the Udacity dataset publicly available [here](https://github.com/udacity/self-driving-car/tree/master/annotations#dataset-2). We've written
 our own scripts to convert the annotations to suit darknet. They're in the scripts folder along with other several useful scripts.
 
-Project steps:
+Training steps:
 ---
-1. Download and extract the udacity dataset into a folder, then divide the dataset according to your liking(we used 10,000 for training, 3,000 for validation, & another unlabeled dataset for testing).
-2. Run the necessary scripts to generate the files and annotations needed for training.
-3. Run the anchors script to generate the anchors needed for your CFG file.
-4. Create your CFG and data files as mentioned in the repository referenced [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
-5. Start training!
+1. Clone the repository, install the dependencies and build using 'make' after navigating to the repository root folder.
+2. Download and extract the udacity dataset into a folder, then divide the dataset according to your liking(we used 10,000 for training, 3,000 for validation, & another unlabeled dataset for testing).
+3. Run the necessary scripts to generate the files and annotations needed for training.
+4. Run the anchors script to generate the anchors needed for your CFG file.
+5. Create your CFG and data files as mentioned in the repository referenced [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
+6. Start training!
+
+Results:
+---
+
+Reproducing Results:
+---
++ We were training for only 1 class, Car. We've trained for 10,000 iterations and found out that the best IOU result was obtained at iteration 5,000. You can download our weights file [here](link).
++ The config file of our network is readily present in the cfg folder, as well as the data and names files. However, you'll need to modify the training, validation and names paths in your data file to match those on your environment.
++ Once you're done training (or if you're using our weights file) you can simply invoke one of the following two commands to validate or test YOLO:
+'''
+./darknet detector valid data/rtcd.data cfg/rtcd.cfg path-to-weights
+./darknet detector test data/rtcd.data cfg/rtcd.cfg path-to-weights path-to-image
+./darknet detector demo data/rtcd.data cfg/rtcd.cfg path-to-weights path-to-video
+'''
+
+
