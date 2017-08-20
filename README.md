@@ -46,6 +46,7 @@ generate anchors: gen_anchors.py -filelist path-to-training-file-list -output_di
 visualize anchors: python visualize_anchors.py -anchor_dir generated_anchors/
 ```
 ![Anchors visualization](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/anchors5.png "Anchors")
+
 5. Create your CFG and data files as mentioned in the repository referenced [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
 6. Start training!
 
