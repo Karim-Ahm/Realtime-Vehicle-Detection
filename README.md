@@ -42,8 +42,10 @@ Training steps:
 4. Run the anchors script to generate the anchors needed for your CFG file.
 ```
 run both scripts in root darknet folder 
-generate anchors: gen_anchors.py -filelist path-to-training-file-list -output_dir generated_anchors -num_clusters 5
-visualize anchors: python visualize_anchors.py -anchor_dir generated_anchors/
+generate anchors: 
+gen_anchors.py -filelist path-to-training-file-list -output_dir generated_anchors -num_clusters 5
+visualize anchors: 
+python visualize_anchors.py -anchor_dir generated_anchors/
 ```
 ![Anchors visualization](https://github.com/Karim-92/Realtime-Vehicle-Detection/blob/master/images/anchors5.png "Anchors")
 
