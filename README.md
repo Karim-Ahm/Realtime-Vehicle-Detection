@@ -81,5 +81,5 @@ Citations:
 1. [You Only Look Once: Unified, Real-Time Object Detection.](https://arxiv.org/abs/1506.02640)
 2. [YOLO9000: Better, Faster, Stronger.](https://arxiv.org/abs/1612.08242)
 3. [Darknet: Opensource neural networks framework.](pjreddie.com/darknet/yolo/)
-4. [AlexeyAB's Darknet repository.](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects).
+4. [AlexeyAB's Darknet repository.](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects)
 5. [Jumabek's scripts that we modified for the anchors.](https://github.com/Jumabek/darknet_scripts)
